@@ -1,0 +1,30 @@
+.content_box {
+  width: 62%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 500%;
+  font-weight: bold;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+.section {
+  font-size: 200%;
+}
+
+.content {
+  margin-left: 5%;
+}
+
+.timestamp {
+  text-align: center;
+  font-size: 90%;
+}
