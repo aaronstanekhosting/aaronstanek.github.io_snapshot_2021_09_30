@@ -18,23 +18,23 @@
   <script>
     function res() {
       var f = document.getElementById("fish").style;
-      f.width = window.innerWidth + "px";
-      f.height = window.innerHeight + "px";
+      var c = document.getElementById("content_box").getBoundingClientRect();
+      f.height = (c.height + 325) + "px";
     }
-    function dres() {
-      if (document.getElementById("fish") === null) {
-        setTimeout(dres,10);
+    function ares() {
+      if ((document.getElementById("fish") === null) || (document.getElementById("content_box") === null)) {
+        setTimeout(ares,50);
       }
       else {
         res();
       }
     }
-    dres();
+    ares();
   </script>
 </head>
 <body onresize="res()">
   <iframe id="fish" src="https://digital-fish.github.io"></iframe>
-  <div class="content_box">
+  <div id="content_box">
   <p class="title">
     Aaron Stanek
   </p>
@@ -42,20 +42,20 @@
   <p class="section">
     Who am I?
   </p>
-  <p class="content">
+  <p>
     I am recent college graduate, scientific researcher, hobbyist programmer and lover of nature.
   </p>
   <p class="section">
     What did I do at school?
   </p>
-  <p class="content">
+  <p>
     I just got a BS in physics from <a href="https://www.ucsb.edu/">UC Santa Barbara</a>.
     While there, I was part of the <a href="https://www.ccs.ucsb.edu/">College of Creative Studies</a> (CCS),
     a school within the university focused stimulating original work and engaging students in real-world scientific research.
     For me, this meant a crash course in physics from day one, most notably including an advanced lab class sequence during my second year,
     and access to some upper division coursework well ahead of my peers outside CCS.
   </p>
-  <p class="content">
+  <p>
     Even though my background is in physics, I certainly don't limit myself to just physics.
     I'm always eager to branch out and try new things.
     For example, I teamed up with the <a href="https://datascienceucsb.org/">UCSB Data Science Club</a>
@@ -64,13 +64,13 @@
   <p class="section">
     What do I research?
   </p>
-  <p class="content">
+  <p>
     I just finished an internship at <a href="https://www.lbl.gov/">Lawrence Berkeley Lab</a> with
     <a href="http://www-rnc.lbl.gov/~spencer/">Dr. Spencer Klein</a>.
     This work centered around understanding backward production of ω vector mesons in
     <a href="https://physicstoday.scitation.org/doi/10.1063/PT.3.3727">Ultraperipheral nuclear collisions</a>.
   </p>
-  <p class="content">
+  <p>
     While at UC Santa Barbara,
     I worked in the lab of <a href="http://stuart.physics.ucsb.edu/">Dr. David Stuart</a>.
     Most of the work in the lab is centered about the <a href="https://arxiv.org/pdf/1607.04669.pdf">milliQan Experiment</a>,
@@ -83,21 +83,21 @@
     For this, I designed the physical apparatus, the experimental procedure, and the analysis software.
     I used a 3D printer to build most of the setup, and a soldering iron to build the electronic components.
   </p>
-  <p class="content">
+  <p>
     If you are curious about all the other things happening in Dr. Stuart's lab, we keep an active online journal of all of our activities.
     (<a href="http://fixels.physics.ucsb.edu/">link</a>)
   </p>
   <p class="section">
     What do I code?
   </p>
-  <p class="content">
+  <p>
     Short answer: Nothing spectacular.
     Long answer: I mess around, see what I can build. Mostly small widgets and tools, some are larger projects.
     If you want to see more, check out <a href="https://github.com/aaronstanek">my GitHub page</a>.
     Recently, I've made <a href="https://github.com/gen-show/gen-show.github.io">a program to draw family trees</a>
     and <a href="https://coin-jar-value.github.io/">a calculator to estimate the value of spare change</a>.
   </p>
-  <p class="content">
+  <p>
     For some reason, I know more programming languages than I could ever possibly need to:
     <a href="https://en.wikipedia.org/wiki/C_(programming_language)">C</a>,
     <a href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a>,
@@ -116,7 +116,7 @@
   <p class="section">
     What do I do in nature?
   </p>
-  <p class="content">
+  <p>
     Hiking, biking, camping, SCUBA diving, tidepooling, or just a stroll through the park.
     I enjoy being in and around nature. I like sharing nature with others.
     I am firmly believe that we need to protect what is here and restore what is lost
@@ -125,17 +125,17 @@
   <p class="section">
     Am I a competent adult?
   </p>
-  <p class="content">
+  <p>
     Somewhat. Please see <a href="https://www.linkedin.com/in/amstanek/">my LinkedIn page</a>
     for more information on this matter.
   </p>
   <p class="section">
     Comics
   </p>
-  <p class="content">
+  <p>
     <a href="https://xkcd.com/1245/">XKCD</a>
   </p>
-  <p class="content">
+  <p>
     <a href="http://dilbert.com/">Dilbert</a>
   </p>
   <br>
