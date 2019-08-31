@@ -15,8 +15,26 @@
     gtag('js', new Date());
     gtag('config', 'UA-124583484-1');
   </script>
+  <script>
+    function res() {
+      var f = document.getElementById("fish").style;
+      f.width = window.innerWidth + "px";
+      f.height = window.innerHeight + "px";
+    }
+    function dres() {
+      if (document.getElementById("fish") === null) {
+        setTimeout(dres,10);
+      }
+      else {
+        res();
+      }
+    }
+    dres();
+  </script>
 </head>
-<body><div class="content_box">
+<body onresize="res()">
+  <iframe id="fish" src="https://digital-fish.github.io"></iframe>
+  <div class="content_box">
   <p class="title">
     Aaron Stanek
   </p>
