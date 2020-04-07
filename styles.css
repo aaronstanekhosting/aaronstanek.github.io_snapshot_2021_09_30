@@ -1,0 +1,123 @@
+body {
+    margin: 0px;
+    border-width: 0px;
+    padding: 0px;
+}
+
+div {
+    width: 100%;
+    margin: 0px;
+    border-width: 0px;
+    padding: 0px;
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+#bigimgholder {
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#bigimg {
+    margin: 0px;
+    border-width: 0px;
+    width: max(100%,calc( 1.334 * 100vh ));
+    position: fixed;
+    top: 0px;
+    left: calc((max(100%,calc( 1.334 * 100vh )) - 100%) / (-2));
+}
+
+.hello {
+    position: fixed;
+    top: calc((50vh - (max(5vw,18px) / 2)) - 10px);
+    z-index: 1;
+}
+
+.hello div {
+    width: fit-content;
+    max-width: calc(61.8% - 20px);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255,255,255,0.6);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hello div p {
+    font-size: max(5vw,18px);
+    margin: 0px;
+    border-width: 0px;
+}
+
+.contentspace {
+    height: 100vh;
+}
+
+.content {
+    width: 61.8%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.subcontent {
+    background-color: white;
+    padding: 10px;
+    width: calc(100% - 20px);
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
+
+#first {
+    min-height: calc(5vw + 20px);
+}
+
+.words {
+    text-indent: min(10%,60px);
+}
+
+.subtitle {
+    background-color: #AAAAAA;
+    text-align: center;
+}
+
+.subtitle p {
+    margin: 0px;
+    border-width: 0px;
+    font-size: max(2vw,18px);
+}
+
+.subbox {
+    background-color: #DDDDDD;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.subbox p {
+    margin: 0px;
+    border-width: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.bottomtext {
+    height: calc(5vw + 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomtext p {
+    color: #7F7F7F;
+}
